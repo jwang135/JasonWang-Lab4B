@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		CE16B9B11E6CD705001C6A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16B9B01E6CD705001C6A4C /* AppDelegate.swift */; };
-		CE16B9B31E6CD705001C6A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16B9B21E6CD705001C6A4C /* ViewController.swift */; };
 		CE16B9B61E6CD705001C6A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE16B9B41E6CD705001C6A4C /* Main.storyboard */; };
 		CE16B9B81E6CD705001C6A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE16B9B71E6CD705001C6A4C /* Assets.xcassets */; };
 		CE16B9BB1E6CD705001C6A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE16B9B91E6CD705001C6A4C /* LaunchScreen.storyboard */; };
 		CE16B9C61E6CD705001C6A4C /* JasonWang_Lab4BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16B9C51E6CD705001C6A4C /* JasonWang_Lab4BTests.swift */; };
 		CE16B9D11E6CD705001C6A4C /* JasonWang_Lab4BUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16B9D01E6CD705001C6A4C /* JasonWang_Lab4BUITests.swift */; };
+		CE16B9DF1E6CD8EF001C6A4C /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16B9DE1E6CD8EF001C6A4C /* Info.swift */; };
+		CE16B9EF1E70FF68001C6A4C /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16B9EE1E70FF68001C6A4C /* MovieViewController.swift */; };
+		CE16B9F11E710CD5001C6A4C /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16B9F01E710CD5001C6A4C /* FavViewController.swift */; };
+		CE5421C31E8488E800A1189F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5421C21E8488E800A1189F /* SwiftyJSON.swift */; };
+		CEFD16481E71512300726D28 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD16471E71512300726D28 /* SearchViewController.swift */; };
+		CEFD164A1E71720F00726D28 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD16491E71720F00726D28 /* WebViewController.swift */; };
+		CEFD164C1E71742A00726D28 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD164B1E71742A00726D28 /* SearchViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,6 @@
 /* Begin PBXFileReference section */
 		CE16B9AD1E6CD705001C6A4C /* JasonWang-Lab4B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JasonWang-Lab4B.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE16B9B01E6CD705001C6A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE16B9B21E6CD705001C6A4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE16B9B51E6CD705001C6A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE16B9B71E6CD705001C6A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE16B9BA1E6CD705001C6A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		CE16B9CC1E6CD705001C6A4C /* JasonWang-Lab4BUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JasonWang-Lab4BUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE16B9D01E6CD705001C6A4C /* JasonWang_Lab4BUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JasonWang_Lab4BUITests.swift; sourceTree = "<group>"; };
 		CE16B9D21E6CD705001C6A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE16B9DE1E6CD8EF001C6A4C /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		CE16B9EE1E70FF68001C6A4C /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		CE16B9F01E710CD5001C6A4C /* FavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
+		CE5421C21E8488E800A1189F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		CEFD16471E71512300726D28 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CEFD16491E71720F00726D28 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CEFD164B1E71742A00726D28 /* SearchViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,18 @@
 		CE16B9AF1E6CD705001C6A4C /* JasonWang-Lab4B */ = {
 			isa = PBXGroup;
 			children = (
+				CE5421C21E8488E800A1189F /* SwiftyJSON.swift */,
 				CE16B9B01E6CD705001C6A4C /* AppDelegate.swift */,
-				CE16B9B21E6CD705001C6A4C /* ViewController.swift */,
 				CE16B9B41E6CD705001C6A4C /* Main.storyboard */,
 				CE16B9B71E6CD705001C6A4C /* Assets.xcassets */,
 				CE16B9B91E6CD705001C6A4C /* LaunchScreen.storyboard */,
 				CE16B9BC1E6CD705001C6A4C /* Info.plist */,
+				CE16B9DE1E6CD8EF001C6A4C /* Info.swift */,
+				CE16B9EE1E70FF68001C6A4C /* MovieViewController.swift */,
+				CE16B9F01E710CD5001C6A4C /* FavViewController.swift */,
+				CEFD16471E71512300726D28 /* SearchViewController.swift */,
+				CEFD16491E71720F00726D28 /* WebViewController.swift */,
+				CEFD164B1E71742A00726D28 /* SearchViewCell.swift */,
 			);
 			path = "JasonWang-Lab4B";
 			sourceTree = "<group>";
@@ -193,15 +211,18 @@
 				TargetAttributes = {
 					CE16B9AC1E6CD705001C6A4C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57VK9GJMZK;
 						ProvisioningStyle = Automatic;
 					};
 					CE16B9C01E6CD705001C6A4C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57VK9GJMZK;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CE16B9AC1E6CD705001C6A4C;
 					};
 					CE16B9CB1E6CD705001C6A4C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57VK9GJMZK;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CE16B9AC1E6CD705001C6A4C;
 					};
@@ -259,7 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE16B9B31E6CD705001C6A4C /* ViewController.swift in Sources */,
+				CEFD164C1E71742A00726D28 /* SearchViewCell.swift in Sources */,
+				CE16B9F11E710CD5001C6A4C /* FavViewController.swift in Sources */,
+				CE16B9DF1E6CD8EF001C6A4C /* Info.swift in Sources */,
+				CEFD16481E71512300726D28 /* SearchViewController.swift in Sources */,
+				CE16B9EF1E70FF68001C6A4C /* MovieViewController.swift in Sources */,
+				CEFD164A1E71720F00726D28 /* WebViewController.swift in Sources */,
+				CE5421C31E8488E800A1189F /* SwiftyJSON.swift in Sources */,
 				CE16B9B11E6CD705001C6A4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +439,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 57VK9GJMZK;
 				INFOPLIST_FILE = "JasonWang-Lab4B/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wangjason.JasonWang-Lab4B";
@@ -424,6 +453,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 57VK9GJMZK;
 				INFOPLIST_FILE = "JasonWang-Lab4B/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wangjason.JasonWang-Lab4B";
@@ -437,6 +468,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 57VK9GJMZK;
 				INFOPLIST_FILE = "JasonWang-Lab4BTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wangjason.JasonWang-Lab4BTests";
@@ -451,6 +484,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 57VK9GJMZK;
 				INFOPLIST_FILE = "JasonWang-Lab4BTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wangjason.JasonWang-Lab4BTests";
@@ -464,6 +499,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 57VK9GJMZK;
 				INFOPLIST_FILE = "JasonWang-Lab4BUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wangjason.JasonWang-Lab4BUITests";
@@ -477,6 +514,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 57VK9GJMZK;
 				INFOPLIST_FILE = "JasonWang-Lab4BUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wangjason.JasonWang-Lab4BUITests";
@@ -505,6 +544,7 @@
 				CE16B9D71E6CD705001C6A4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE16B9D81E6CD705001C6A4C /* Build configuration list for PBXNativeTarget "JasonWang-Lab4BTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +553,7 @@
 				CE16B9DA1E6CD705001C6A4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE16B9DB1E6CD705001C6A4C /* Build configuration list for PBXNativeTarget "JasonWang-Lab4BUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +562,7 @@
 				CE16B9DD1E6CD705001C6A4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
