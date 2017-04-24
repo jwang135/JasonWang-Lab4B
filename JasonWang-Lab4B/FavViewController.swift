@@ -14,7 +14,7 @@ class FavViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     var favArray:[String] = []
     
     @IBOutlet weak var favTable: UITableView!
-    
+    //ViewController for user's favorited movies
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +34,7 @@ class FavViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
     
-    //loads the user default saved movies to the table
+    //Loads the user default saved movies to the table
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated);
@@ -49,7 +49,6 @@ class FavViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         // Dispose of any resources that can be recreated.
     }
     
-   //Table Stuff
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -78,7 +77,7 @@ class FavViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
     
-    //Segue to webviewcontroller
+    //When table entry for a movie is clicked, segue to webViewController and shows the IMDB web page of that movie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         self.performSegue(withIdentifier: "showIMDBPage", sender: self)

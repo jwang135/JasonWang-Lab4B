@@ -24,15 +24,18 @@ class MovieInfoViewController: UIViewController {
     @IBOutlet weak var imdb: UILabel!
     @IBOutlet weak var faveButton: UIButton!
     
+    
+    //Alert Controller appears and prompts the user if he or she wants to add the movie to his or her favories
+
     @IBAction func addToFavourites(_ sender: UIButton) {
-        //alert is an extra creative
+       
         let alertControl = UIAlertController(title: "Favorite", message: "Add Movie to Favorites List", preferredStyle: .alert)
         
-        //cancel button
+        //Cancel button
         let cancelAct = UIAlertAction(title: "Cancel", style: .cancel)
         alertControl.addAction(cancelAct)
         
-        //save button
+        //Save button
         let saveAct = UIAlertAction(title:"Add", style: .default)
         alertControl.addAction(saveAct)
         

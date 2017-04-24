@@ -18,7 +18,6 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     var movieStore: [movieInfo] = []
     var imageStore: [UIImage] = []
     
-    //after you hit search
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let movieString = searchBar.text
         let editString = movieString?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
@@ -38,21 +37,20 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         self.activityWheel.isHidden = false
         
         DispatchQueue.global(qos: .userInitiated).async {
-            //search is done in background
+            //Search is done in background, while activity wheel is running
             self.getMovieInfo(search1)
             self.getMovieInfo(search2)
             self.getMovieInfo(search3)
             self.storeImages()
             
-            //what you see
             DispatchQueue.main.async {
                 
                 self.movieCollection.reloadData()
-                //after loading you stop animation
+                //After done loading you stop animation
                 self.activityWheel.stopAnimating()
                 self.activityWheel.isHidden = true
                 
-                //Creative if you see nothing then this picture shows up
+                //If no results are available the nothingThere picture is shown
                 if self.movieStore.isEmpty{
 
                     self.nothingThere.isHidden = false
@@ -61,8 +59,6 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         }
     }
     
-    //Makes sure no extra cells get printed out maxes cell counts
-    //to amount of movies in movie store array
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return movieStore.count
     }
@@ -72,7 +68,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     
-    //Set image and movie name to each collection cell
+    //Sets the movie poster and movie name to each Collection cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as! SearchViewCell
@@ -95,7 +91,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         }
     }
     
-    //Segue And Load Appropriate Info Individual movie
+    //Segue And Load Appropriate Info for Individual Movies
     func collectionView(_ collectionView:
         UICollectionView, didSelectItemAt indexPath: IndexPath) {
          self.performSegue(withIdentifier: "showMovieInfo", sender: self)
@@ -116,7 +112,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     //get JSON Info
     //getMovieInfo appends JSON results to movieStore Array
-    //getJSON returns JSON type that getMovieInfo acts upon
+
     private func getMovieInfo(_ url: String) {
         
         let jsonInfo = getJSON(url)
@@ -147,7 +143,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         
     }
     
-    //stores images in an array and if there's no image for a movie then
+    //Stores images in an array and if there's no image for a movie then
     //the no-image-found.jpg is appended for that movie
     
     private func storeImages() {
@@ -173,7 +169,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         let scnWidth = scnSize.width
         let scnHeight = scnSize.height
         
-        //set boundaries for the collection view
+        //Sets boundaries for the collection view
         
         let format: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         format.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 10, right: 10)
@@ -184,13 +180,11 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         searchBar.delegate = self
         movieCollection.collectionViewLayout = format
         
-        //this must be added before hand in order for the activity wheel animation to be seen
         
         self.view.addSubview(self.activityWheel)
         self.activityWheel.startAnimating()
         self.activityWheel.isHidden = true
         
-        // add no searches available picture
         
         self.view.addSubview(nothingThere)
         self.nothingThere.isHidden = true
@@ -201,7 +195,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
             
             DispatchQueue.main.async {
                 self.movieCollection.reloadData()
-                //reload data must finish in order for the activity wheel to be gone
+                //reloadData() must finish and then activity wheel will disappear
                 self.activityWheel.isHidden = true
                 self.activityWheel.stopAnimating()
             }

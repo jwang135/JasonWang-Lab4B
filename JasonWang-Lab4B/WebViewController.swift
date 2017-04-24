@@ -14,7 +14,7 @@ class WebViewController: UIViewController, WKNavigationDelegate{
     var webView: WKWebView!
     var urlInsert: String! = nil
     
-    //going to imdb is an extra creative
+    //Loads the IMDB page of the favorited movie
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self

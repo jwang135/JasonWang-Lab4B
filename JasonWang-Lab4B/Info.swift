@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//Struct containing movie data
 struct movieInfo{
     var mName: String
     var imdbRate: Float
